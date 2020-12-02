@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Cheatsheet | HTML</title>
+        <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <nav>
+        <ul class="navbar">
+            <li><a href="html.html" class="nav">HTML</a></li>
+            <li><a href="pages/css.html" class="nav">CSS</a></li>
+            <li><a href="pages/learn-more.html" class="nav">Learn More</a></li>
+        </ul>
+    </nav>
+    <body>
+        <h1 id="html">HTML5 Cheatsheet</h1>
+        <div class="table-of-contents"></div>
+        <h2>Table of Contents</h2>
+            <ul class = "table-of-contents">
+                <li><a href="#html-common-tags" class="nav">Common HTML Tags</a></li>
+                <li><a href="#html-important-tags" class="nav">Important HTML Tags</a></li>
+                <li><a href="#html-interactive-tags" class="nav">Interactive HTML Tags</a></li>
+            </ul>
+        </div>
+        <div class="html-common-tags" id="html-common-tags">
+        <h3>Common HTML Tags</h3>
+        <p>
+            HTML, or Hypertext Markup Language, has a variety of different tags available for you to use to build your very own website.
+            The following table presents a list of some of the <strong>MOST COMMON</strong> HTML tags you will use and what they represent.
+        </p>
+        <table id="html-common-table">
+            <tr class="color-one">
+                <th>Tag</th>
+                <th class="justify">Description</th>
+            </tr>
+            <tr class="color-two">
+                <td>&lt;h1-h6&gt;</td>
+                <td>These tags are used for headings, 1 representing the largest and 6 representing the smallest.</td>
+            </tr>
+            <tr class="color-one">
+                <td>&lt;p&gt;</td>
+                <td>
+                    These tags are used for paragraphs, or text contained on screen that is not imporant enough to 
+                    be a heading.
+                </td>
+            </tr>
+            <tr class="color-two">
+                <td>&lt;a&gt;</td>
+                <td>
+                    This tag is used to link certain pages or URL's inside fo your code. &lt;a&gt; tags are always accompanied with
+                    an href="link.example" inside of the opening tag to specify where you would like to go. Additionally, you can
+                    modify the display text by putting text in between the opening and closing tag, like so: 
+                    <br/><span class="italics">&lt;a href="link.example"&gt;<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Click Here!</a>&lt;/a&gt;</span>
+                    (Go ahead, click it).
+                </td>
+            </tr>
+            <tr class="color-one">
+                <td>&lt;img&gt;</td>
+                <td>
+                    This tag is used to display an image on the webpage. Note that if you want an image to appear in the background, it is typically
+                    better practice to add the image in css rather than in HTML.
+                </td>
+            </tr>
+            <tr class="color-two">
+                <td>&lt;video&gt;</td>
+                <td>
+                    A video tag allows you to embed a video directly into your webpage, either froma  local file or from an external link.
+                    HTML has built in properties to allow you to customize the height, width, and have standard playback tools (controls).
+                    Most video tags must also nest a &lt;source&gt; tag with the src="video.mp4" attribute defined.
+                </td>
+            </tr>
+            <tr class="color-one">
+                <td>&lt;link&gt;</td>
+                <td>
+                    A link tag is used in the header of your document, not to be confused with the &lt;a&gt; tag. This tag typically links your
+                    CSS stylesheet to your HTML document.
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div class="html-important-tags" id="html-important-tags">
+            <h3>Important HTML Tags</h3>
+            <p>
+                Every HTML document will have certain tags, no matter the content of the webpage. While some of the tags listen next will not necissarily
+                be used in every HTML document, it is important to know them as they will be very common.
+            </p>
+            <table id="html-important-table">
+                <tr class="color-one">
+                    <th>Tag</th>
+                    <th class="justify">Description</th>
+                </tr>
+                <tr class="color-two">
+                      <td>&lt;!DOCTYPE HTML&gt;</td>
+                      <td>
+                          This tag is a <strong>MUST</strong> on every HTML document. It tells the browser to expect an HTML document
+                          and allows it to render the code properly. This tag will be the first thing at the top of your HTML code.
+                      </td>
+                </tr>
+                <tr class="color-one">
+                    <td>&lt;html&gt;</td>
+                    <td>
+                        Immidiately following the doctype tag, this is another <strong>MUST</strong>. All of your HTML code should be 
+                        nested within this tag.
+                    </td>
+                </tr>
+                <tr class="color-two">
+                    <td>&lt;head&gt;</td>
+                    <td>
+                        Following the HTML tag will be this tag. The head contains all of the meta-data for the site such as the character set,
+                        the author, the desciprtion, and the title. This is where your &lt;link&gt; tag will be nested as well (containing your 
+                        stylesheet). None of this information will display on your actual webpage (The title will show on the tab of your broswer if supported).
+                    </td>
+                </tr>
+                <tr class="color-one">
+                    <td>&lt;body&gt;</td>
+                    <td>This tag typically contains most of the content for your webpage, but not always. There can be only one body tag per document,
+                        so it is important to keep the main content nested within.
+                    </td>
+                </tr>
+                <tr class="color-two">
+                    <td>&lt;nav&gt;</td>
+                    <td>
+                        The nav tag is typically where your navigation bar goes if your site links to other internal pages.
+                    </td>
+                </tr>
+                <tr class="color-one">
+                    <td>&lt;div&gt;</td>
+                    <td>This tag is used to seperate and define a section in a document. For specificity, the &lt;section&gt;,
+                         &lt;main&gt;, and &lt;span&gt; are also used.
+                    </td>
+                </tr>
+                <tr class="color-two">
+                    <td>&lt;footer&gt;</td>
+                    <td>Used to seperate the footer of your webpage, typically containing disclaimers, copyrights, and links.</td>
+                </tr>
+                <tr class="color-one">
+                    <td>&lt;-- --&gt;</td>
+                    <td>
+                        This beloved tag is what is known as a comment tag. When used inside of an HTML document it is a way to add text
+                        into the file without it trying to render. This is very useful for describing what you are doing or leaving notes in 
+                        the code.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="html-interactive-tags" id="html-interactive-tags">
+            <h3>Interactive HTML Tags</h3>
+            <p>
+                Many websites contain interactive elements, such as forms and buttons, that take and store user input. You might think there 
+                is complex code at work, and sometimes you may be right, but just like everything else HTML lays the framework for these items.
+                In the table below are a few HTML tags that allow you to customize and recieve user input.
+            </p>
+            <table id="html-interactive-table">
+                <tr class="color-one">
+                    <th>Tag</th>
+                    <th class="justify">Description</th>
+                </tr>
+                <tr class="color-two">
+                    <td>&lt;form&gt;</td>
+                    <td>
+                        Forms are a way of giving your user selections to choose from. There are a lot of different ways to recieve input with forms.
+                        You can reference them <a href="https://www.w3schools.com/tags/tag_form.asp" target="_blank">Here</a>.
+                    </td>
+                </tr>
+                <tr class="color-one">
+                    <td>&lt;input&gt;</td>
+                    <td>
+                        Used in accordance with forms (typically) the input tag allows you to declare what type of input you would like to receive from
+                        the user. See the link above for a complete list of input types.
+                    </td>
+                </tr>
+                <tr class="color-two">
+                    <td>&lt;output&gt;</td>
+                    <td>
+                        Output is where you would display the reult of the information you requested, if any. A good exaample would be a calculator: 
+                        Input takes the equation, output displays the result!
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <footer>
+        <p>Justin Yates</p>
+        <ul class="footer">
+            <li><a href="github.com/justinyates887">Github</a></li>
+            <li><a href="linkedin.com/in/justin-yates887">Linkedin</a></li>
+            <li><a href="mailto:justinyates887@protonmail.ch">Email</a></li>
+        </ul>
+    </footer>
+</html>

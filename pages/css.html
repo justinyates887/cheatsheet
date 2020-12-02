@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Cheatsheet | CSS</title>
+        <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <nav>
+        <ul class="navbar">
+            <li><a href="html.html" class="nav">HTML</a></li>
+            <li><a href="pages/css.html" class="nav">CSS</a></li>
+            <li><a href="pages/learn-more.html" class="nav">Learn More</a></li>
+        </ul>
+    </nav>
+    <body>
+        <h1 id="css">CSS Cheatsheet</h1>
+    <div class="table-of-contents">
+        <h2>Table of Contents</h2>
+            <ul class = "table-of-contents">
+                <li><a href="#css-intro" class="nav">CSS Introduction</a></li>
+                <li><a href="#css-syntax" class="nav">CSS Syntax</a></li>
+                <li><a href="#css-box" class="nav">CSS: The Box Model</a></li>
+            </ul>
+    </div>
+    <div class="css-intro" id="css-intro">
+        <h3>CSS Introduction</h3>
+        <p>
+            CSS, or Cascading Style Sheets, is the language that turns your basic HTML webpage into the beautiful webscapes
+            you see every day. CSS tells the HTML elements how they should be displayed on the screen.
+        </p>
+        <br/>
+        <p>
+            CSS was created by the World Wide Web Consortium, or W3C, in order to combat the nightmare of HTML styling. The 
+            beauty of CSS is that it cn target multiple elements, even multiple pages, at once! This makes the process of styling
+            a website much easier.
+        </p>
+        <br/>
+        <p>
+            CSS files can be stored in an HTML document, but it is good practice to keep your styling in a seperate .css file.
+        </p>
+    </div>
+    <div class="css-syntax" id="css-syntax">
+        <h3>CSS Syntax</h3>
+        <p>
+            CSS has a few base elements for describing the style of a website: Selectors, declarations, properties, and values.
+            There are a lot of properties that you can give your selections to make it look exactly how you want it to, so this
+            guide won't go over them all. Check the <a href="learn-more.html">Learn More</a> page for links to resources that will
+            have a more complete list of properties and values.
+        </p>
+        <h4>Selectors</h4>
+        <table id="selector-table">
+            <tr class="color-one">
+                <th>Selectors</th>
+                <th>Description</th>
+            </tr>
+            <tr class="color-two">
+                <td>tag</td>
+                <td>
+                    The tag selector is a common one, used for selecting non specific elements to style. Pick whichever html element you wish to style
+                    (example: &lt;p&gt;) without the brackets. Then, put your properties and values in between curly braces, like so:
+                    <br/>
+                    <br/>
+                    p { propety: value; }
+                </td>
+            </tr>
+            <tr class="color-one">
+                <td>.class</td>
+                <td>
+                    The class selector is a little more specific. It is able to target any HTML element that has its class set to this selector.
+                    To set the class in HTML simply type class="class_name" inside of your opening element, after the element declaration, like so: 
+                    <br/>
+                    <br/>
+                    &lt;p class="paragraph-one"&gt;
+                    <br/>
+                    <br/>
+                    You target this selector the same way you do with a tag, excpet you put a period in front, indicating that it is a class.
+                </td>
+            </tr>
+            <tr class="color-two">
+                <td>#id</td>
+                <td>
+                    An ID is very similar to a class, however it is mainly used to target a single element that you wish to style differently.
+                    Instead of leading the selection with a period, you use the pound sign, or hashtag (#). ID's are also declared inside of the
+                    HTML document, just like the class, but say id="" instead of class="".
+                </td>
+            </tr>
+            <tr class="color-one">
+                <td>*</td>
+                <td>
+                    The asterisk, or star, is a universal selector that targets EVERYTHING.
+                </td>
+            </tr>
+        </table>
+        <h4>Declarations, Properties, and Values</h4>
+        <table id="dpv-table">
+            <tr class="color-one">
+                <th>Declaration</th>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+            <tr class="color-two">
+                <td>
+                    A declaration is the full statement of property and value you assign to the element, class, or ID
+                </td>
+                <td>
+                    A property is how you are wanting to style the element, class, or ID.
+                </td>
+                <td>
+                    A value is the (duh) value you wish to give the element, class, or ID.
+                </td>
+            </tr>
+            <tr class="color-one">
+                <td>
+                    Example declaration:
+                    <br/>
+                    <br/>
+                    p {font-size: 20px}
+                </td>
+                <td>
+                    "font-size" is the property.
+                </td>
+                <td>
+                    "20px" is the value.
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="css-box" id="css-box">
+        <h3>The CSS Box Model</h3>
+        <p>
+            The box model describes the CSS and HTML concept where all elements are nested within boxes. There are four
+            main boxes each and every HTML element is nested within that can be altered with CSS: The content, the padding
+            around the content, the border around the padding, and the margin around the border.
+        </p>
+        <p>
+            The following picture illustrates this:
+        </p>
+        <img src="assets/images/box-model.png" alt="An image of the box model concept"/>
+        <table id="css-box-table">
+            <tr class="color-one">
+                <th>Box</th>
+                <th>Description</th>
+            </tr>
+            <tr class="color-two">
+                <td>Content</td>
+                <td>
+                    The content of the box where the text and images appear.
+                </td>
+            </tr>
+            <tr class="color-one">
+                <td>Padding</td>
+                <td>
+                    Clears an area around the content. The padding is trasnparent.
+                </td>
+            </tr>
+            <tr class="color-two">
+                <td>Border</td>
+                <td>
+                    A border that goes around the padding and content. Can be styled with properties.
+                </td>
+            </tr>
+            <tr class="color-one">
+                <td>Margin</td>
+                <td>
+                    Clears an area outside the border. The margin is transparent.
+                </td>
+            </tr>
+        </table>
+    </div>
+    </body>
+    <footer>
+        <p>Justin Yates</p>
+        <ul class="footer">
+            <li><a href="github.com/justinyates887">Github</a></li>
+            <li><a href="linkedin.com/in/justin-yates887">Linkedin</a></li>
+            <li><a href="mailto:justinyates887@protonmail.ch">Email</a></li>
+        </ul>
+    </footer>
+</html>

@@ -1,0 +1,196 @@
+/* main body styling */
+*{
+    color:rgb(206, 206, 206);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgba(27, 27, 27, 0.5);
+    background-image: url(images/dark-background.jpg);
+}
+
+h3{
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 200%;
+    background-color: rgba(65, 65, 65, 0.8);
+    text-align: center;
+}
+
+h4{
+    display: inline-block;
+    margin-left: 7.5%;
+}
+
+p{
+    padding: 1% 7.5% 1% 7.5%;
+    text-align: center;
+    font-size: 125%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav{ /* This is to seperate the page navigation links from the external links */
+    display: inline-block;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: rgb(74, 116, 253);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.learn-more-list{
+    display: block;
+    text-align: center;
+    font-size: 150%;
+    color: rgb(74, 116, 253) !important;
+}
+
+li{
+    display: inline;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* nav bar styling */
+
+nav{
+    color: white;
+    background-color: rgba(56, 55, 55, 0.75);
+    padding: .5%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    position: -webkit-sticky;
+}
+
+.navbar{
+    color:white;
+    font-size: 125%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+/* Header styling */
+
+h1{
+    color: rgb(206, 206, 206);
+    padding: 10%;
+    margin: 0;
+    text-align: center;
+    font-size: 400%;
+}
+
+#html{
+    background-image: url(images/html.png);
+    background-size: 100% 200%;
+    background-repeat: no-repeat; 
+}
+
+#css{
+    background-image: url(images/css.PNG);
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+}
+
+#learn-more{
+    background-image: url(images/learn-more-background.jpg);
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+}
+
+/* Table of Contents */
+
+h2{
+    color: rgb(206, 206, 206);
+    text-align: center;
+    font-size: 300%;
+    text-decoration: underline rgb(206, 206, 206);
+    margin-top: 2.0%;
+    margin-bottom: 0.5%;
+    padding: 0;
+}
+
+.table-of-contents{
+    text-align: center;
+    margin: 0;
+    background-color: rgba(56, 55, 55, 0.75);
+    margin-bottom: 7.5%;
+}
+
+.table-of-contents li{
+    font-size: large;
+}
+
+/* Table */
+
+table{
+    align-items: center;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    text-align: center;
+}
+
+tr th{
+    border: rgba(75, 75, 75, 0.75);
+    border-style: outset;
+    padding: 0.5% 5%;
+    margin: 0;
+    font-size: 175%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td{
+    border: rgba(75, 75, 75, 0.75);
+    border-style: outset; 
+    padding: 1%;
+    margin: 0;
+    font-size: 125%;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#css-box-table{ /* for some reason this table will not follow the ruleset*/
+    display: block;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+/* this is to offset the table rows in alternating colors */
+.color-one{
+    background-color: rgba(27, 27, 27, 0.8);
+}
+
+.color-two{
+    background-color: rgba(56, 55, 55, 0.8);
+}
+
+/*This is to justify the table header in the center of page */
+.justify{
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.footer li{
+    margin: 1%;
+}
